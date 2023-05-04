@@ -1,8 +1,8 @@
 const emojis = {
     "-": " ",
     O: "🚪",
-    X: "./img/goomba.png",
-    I: "./img/Princess_Peach.gif",
+    X: "💣",
+    I: "🎁",
     PLAYER: "./img/Mario&Yoshi.gif",
     BOMB_COLLISION: "🔥",
     GAME_OVER: "👎",
