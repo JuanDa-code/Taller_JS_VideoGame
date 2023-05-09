@@ -106,7 +106,11 @@ function startGame() {
 
     movePlayer();
 
-    h4Previous_Record.innerHTML = `Record anterior: 🏁 ${localStorage.getItem('record_time')} seg.`;
+    if (localStorage.getItem('record_time')) {
+        h4Previous_Record.innerHTML = `Record anterior: 🏁 ${localStorage.getItem('record_time')} seg.`;
+    } else {
+        h4Previous_Record.innerHTML = `Aun no tienes un record, juega para tener tu primer record`
+    }
 }
 
 function movePlayer() {
