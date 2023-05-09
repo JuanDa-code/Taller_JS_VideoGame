@@ -208,6 +208,7 @@ btnRight.addEventListener('click', moveRight);
 btnDown.addEventListener('click', moveDown);
 
 function moveByKeys(event) {
+    console.log(event.key);
     switch (event.key) {
         case 'ArrowUp':
             moveUp();
@@ -221,6 +222,8 @@ function moveByKeys(event) {
         case 'ArrowDown':
             moveDown();
             break;
+        case 'r' || 'R':
+            location.reload();
     }
 }
 
