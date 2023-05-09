@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="game-container">
+        <h1>Laberinto</h1>
+        <p></p>
         <canvas id="game"></canvas>
 
         <div class="btns">
@@ -17,9 +19,13 @@
             <button id="right">Derecha</button>
             <button id="down">Abajo</button>
         </div>
-
+        <br><br>
         <div class="messages">
-            <p>Parrafo de ejemplo</p>
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo: ⏲ <span id="time"></span></p>
+            <h3 id="results"></h3>
+            <p id="buttonReload"></p>
+            <h4 id="previous_record"></h4>
         </div>
     </div>
     <script src="./maps.js"></script>
